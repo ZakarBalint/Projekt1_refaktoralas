@@ -1,0 +1,154 @@
+/*
+rgba(64, 64, 64, 0.6)
+rgba(64, 64, 64, 0.9)
+rgba(255, 255, 255, 0.5)
+rgba(255, 255, 255, 0.7)
+*/
+
+:root
+{
+    --main-bg-color: rgba(64, 64, 64, 0.6);
+    --sec-bg-color: rgba(64, 64, 64, 0.9);
+}
+
+*
+{
+    transition-duration: 0.5s;
+}
+
+body
+{
+    color: white;
+    background-color: transparent;
+    background-image: url(sotet_hkep.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Helvetica";
+}
+
+.hetv, .hetk
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hetk > div
+{
+    height: auto;
+    width: 18%;
+    min-width: 250px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hetv > div
+{
+    height: auto;
+    width: 25%;
+    min-width: 450px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.napok
+{
+    background-color: var(--main-bg-color);
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.napnev
+{
+    background-color: var(--sec-bg-color);
+    width: 90%;
+    height: 50px;   
+    padding: 0px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+.esemeny
+{
+    background-color: var(--sec-bg-color);
+    height: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.tema
+{
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    float: right;
+}
+
+.beallitasok
+{   
+    margin-right: 10px;
+    text-align: right;
+}
+
+.arrow_box {
+    background: var(--sec-bg-color);
+	height: 80px;
+    width: 60%;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;    
+    margin-bottom: 20px;
+    min-width: 300px;
+}
+.arrow_box:after 
+{    
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+    border-left-color: var(--sec-bg-color);
+	border-width: 40px;
+	margin-top: -40px;
+}
+
+.ora
+{
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0;
+    padding: 5px;
+}
+
+.nev_terem
+{
+    display: inline-block;
+    width: 65%;
+    height: 50px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+}
